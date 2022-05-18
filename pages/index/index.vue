@@ -70,7 +70,7 @@
 			async startConnect(){
 				var _this = this
 				let opts = {
-					url: 'wx://192.168.1.131:8083/mqtt',
+					url: 'wx://你的通讯地址:你的通讯端口号/mqtt',
 					clientId: this.connectInfo.clientId,
 					username: this.connectInfo.username,
 					password: this.connectInfo.password,
@@ -93,7 +93,7 @@
 					if(_this.isBuffer){
 						_this.logs.unshift({option:topic+' buffer：', log: JSON.stringify(buffer)})
 					}
-					_this.logs.unshift({option:topic+' message：' + buffer.messageId, log: message.toString()})
+					_this.logs.unshift({option:topic+' message：', log: message.toString()})
 				})
 			},
 			/* 终止连接 */

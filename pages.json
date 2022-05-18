@@ -1,5 +1,15 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
+		{
+			"path": "pages/home/Home",
+			"style": {
+				"navigationBarTitleText": "MQTT",
+				"app-plus":{
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
